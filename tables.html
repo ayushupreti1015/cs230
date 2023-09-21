@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+    
+        .large-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .large-table th, .large-table td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        .large-table th {
+            background-color: #333;
+            color: white;
+        }
+      
+        .small-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .small-table th, .small-table td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        .small-table th {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl mb-4 text-center">Welcome to the Voting Page</h1>
+
+        <table class="large-table">
+            <tr>
+                <td rowspan="2">Vote</td>
+                <td colspan="2">Musicians</td>
+            </tr>
+            <tr>
+                <td>Engineers</td>
+                <td>Gamers</td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    <table class="small-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Nominees</th>
+                                <th>Votes</th>
+                                <th>Winner</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Best Musician</td>
+                                <td>Travis</td>
+                                <td>120</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Best Engineer</td>
+                                <td>Medusa</td>
+                                <td>85</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Best Gamer</td>
+                                <td>Oppenheimer</td>
+                                <td>95</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <div class="my-8">
+            <h2 class="text-2xl mb-4">Go ahead</h2>
+            <div class="flex justify-between">
+                <div class="w-1/2 bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="text-xl mb-2">Please be seated...</h3>
+                    <p>This is a very new section for new and upcoming artists.</p>
+                </div>
+                <div class="w-1/2 bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="text-xl mb-2">Also,</h3>
+                    <p>Please feel free to come and perform</p>
+                </div>
+            </div>
+        </div>
+
+        <a class="btn btn-primary" href="page2.html">Go to Page 2</a>
+        <br>
+        <a class="btn btn-primary" href="index.html">Go back to home page</a>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
